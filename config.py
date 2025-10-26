@@ -11,7 +11,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "8476681745:AAEgPcnzKgSeL78a2fRwurfZrka5y70
 OWNER_ID = int(environ.get("OWNER_ID", "6222491731")) # Owner Id or Admin Id
 
 # Give Your Force Subscribe Channel Id Below And Make Bot Admin With Full Right.
-F_SUB = environ.get("F_SUB", "1003096722799")
+F_SUB = environ.get("F_SUB", "")
 
 # Mongodb Database Uri For User Data Store 
 MONGO_DB_URI = environ.get("MONGO_DB_URI", "mongodb+srv://sbmod88_db_user:XCLxrjdGlaHTG6mz@cluster0.qndjonz.mongodb.net/?appName=Cluster0")
