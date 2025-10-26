@@ -8,7 +8,15 @@ async def start(bot: Client, msg: Message):
     if not await db.is_user_exist(msg.from_user.id):
         await db.add_user(msg.from_user.id, msg.from_user.first_name)
     if F_SUB:
-     
+        try:
+            await bot.get_chat_member(int(F_SUB), msg.from_user.id)
+            # If user is found in channel, continue with normal flow
+        except:
+            try:
+                invite_link = await bot.create_chat_invite_link(int(F_SUB))
+            except:
+                await msg.reply("**Make Sure I Am Admin In Your Channel**")
+                return 
             key = InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton("🍿 Join Update Channel 🍿", url=invite_link.invite_link),
