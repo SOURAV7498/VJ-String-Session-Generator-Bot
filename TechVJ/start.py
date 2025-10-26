@@ -33,8 +33,8 @@ async def start(bot: Client, msg: Message):
             [[
                 InlineKeyboardButton(text="⚡ Generate String Session ⚡", callback_data="generate")
             ],[
-                InlineKeyboardButton("❣️ Support Group ❣️", url="https://t.me/VJ_Bot_Disscussion"),
-                InlineKeyboardButton("🥀 Update Channel 🥀", url="https://t.me/+4bvKkb-ZOSM3NmE1")
+                InlineKeyboardButton("❣️ Support Group ❣️", url="https://t.me/+4bvKkb-ZOSM3NmE1"),
+                InlineKeyboardButton("🥀 Update Channel 🥀", url="https://t.me/+-dkKSAGoUf4wZGFl")
             ]]
         )
     )
